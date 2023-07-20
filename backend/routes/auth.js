@@ -3,8 +3,8 @@ const User = require("../models/User");
 const router = express.Router();
 const { body, validationResult } = require("express-validator");
 const bcrypt = require("bcryptjs");
-const jwt=require("jsonwebtoken");
-const res = require("express/lib/response");
+var jwt=require("jsonwebtoken");
+var fetchuser=require('../middleware/fetchuser')
 
 const JWT_SECRET="Nicetokenwhichwearegiving"
 //Create a user using POST
@@ -48,7 +48,7 @@ router.post(
     } catch (error) {
       //catch the error
       console.error(error.message);
-      res.status(500).send("Some Error Occured");
+      res.status(500).send("Internal Server Error");
     }
   }
 );
@@ -59,23 +59,24 @@ router.post(
     "/login",
     [
       body("email", "Enter a valid email").isEmail(),
-      body("password", "Password cannot be blank").isLength({
-        min: 5,
-      }),
+      body("password", "Password cannot be blank").exists()
     ],
     async (req, res) => {
+        let success=false;
         const errors = validationResult(req);
         if (!errors.isEmpty()) {
           return res.status(400).json({ errors: errors.array() });
         }
         const{email, password}=req.body;
         try{
-            let user=User.findOne({email});
+            let user=await User.findOne({email});
             if(!user){
+                success=false
                 return res.status(400).json({error:"Please try to login with correct credentials"});
             }
             const passwordCompare=await bcrypt.compare(password, user.password);
             if(!passwordCompare){
+                success=false
                 return res.status(400).json({error:"Please try to login with correct credentials"});
             }
             const data = {
@@ -84,11 +85,24 @@ router.post(
                 }
             }
             const autotoken=jwt.sign(data, JWT_SECRET);
+            success=true
             res.json({autotoken})
         }catch(error){
             console.error(error.message);
-            res.status(500).send("Some Error Occured");
+            res.status(500).send("Internal Server error");
         }
     }
-)
-module.exports = router;
+);
+//Get the details of Already Logged in User
+router.post('/getuser', fetchuser,  async (req, res) => {
+
+    try {
+      userId = req.user.id;
+      const user = await User.findById(userId).select("-password")
+      res.send(user)
+    } catch (error) {
+      console.error(error.message);
+      res.status(500).send("Internal Server Error");
+    }
+  })
+  module.exports = router
