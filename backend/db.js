@@ -4,7 +4,7 @@ const mongoURI="mongodb+srv://sejal:123456Qq@atlascluster.wctf8cb.mongodb.net/"
 const connectToMongo = async () => {
     try{
         mongoose.set("strictQuery", false);
-  await  mongoose.connect(mongoURI, ()=>{
+   mongoose.connect(mongoURI, ()=>{
         console.log("Connected to Mongo Successfully")
     })
 }catch(error){
