@@ -13,7 +13,7 @@ function App() {
     <>
     <Router>
       <Navbar /> 
-      
+      <div className='container'>
       <Routes>
         <Route exact
               path="/"
@@ -23,6 +23,7 @@ function App() {
       <Routes>
         <Route exact path="/about" element={<About /> }></Route>
       </Routes>
+      </div>
     </Router>
     </>
   );
