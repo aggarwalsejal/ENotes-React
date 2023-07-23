@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link, useLocation } from "react-router-dom";
-import Notes from './Notes';
   
 
 const Navbar = () => {
@@ -30,7 +29,6 @@ const Navbar = () => {
                 </div>
             </div>
         </nav>
-        <Notes />
         </>
     )
 }

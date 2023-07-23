@@ -3,16 +3,14 @@ import noteContext from '../context/notes/noteContext'
 import Noteitem from './Noteitem';
 
 const Notes=() =>{
-    let context=useContext(noteContext);
+    const context=useContext(noteContext);
     // eslint-disable-next-line
     const{notes, setNotes}=context;
 
   return (
       <>
-    <div className='contianer my-5'>
+    <div className='container my-5'>
     <h2>Your Notes to View</h2>
-   
-   
                 {notes.map((note) => {
                     return <Noteitem key={note._id} note={note} />
                 })}
