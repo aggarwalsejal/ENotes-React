@@ -7,6 +7,7 @@ import About from './components/About';
 import Home from './components/Home';
 import Login from './components/Login';
 import NoteState from './context/notes/NoteState';
+import { Alert } from './components/Alert';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <NoteState>
     <Router>
       <Navbar /> 
+      <Alert />
       <div className='container'>
       <Routes>
         <Route exact
