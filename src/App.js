@@ -8,6 +8,8 @@ import Home from './components/Home';
 import Login from './components/Login';
 import NoteState from './context/notes/NoteState';
 import { Alert } from './components/Alert';
+import Signup from './components/Signup'
+
 
 
 function App() {
@@ -29,6 +31,9 @@ function App() {
       </Routes>
       <Routes>
         <Route exact path="/login" element={<Login /> }></Route>
+      </Routes>
+      <Routes>
+        <Route exact path="/signup" element={<Signup /> }></Route>
       </Routes>
       </div>
     </Router>
