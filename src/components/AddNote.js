@@ -18,20 +18,20 @@ function AddNote(props) {
      <div>
         <div className='container my-3'>
             <h2>Add a Note</h2>
-            <form className='my-3'>
+            <form className='my-5'>
                 <div className="mb-3">
                     <label htmlFor="title" className="form-label"><strong>Title</strong></label>
                     <input type="text" className="form-control" id="title" name="title" value={note.title} onChange={onChange} minLength={5} required /> 
                 </div>
-                <div className="mb-3 mt-5">
+                <div className="mb-3">
                     <label htmlFor="desc" className="form-label" onChange={onChange}><strong>Description</strong></label>
                     <input type="text" className="form-control" id="description" name="description" value={note.description} onChange={onChange} minLength={5} required />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="tag" className="form-label">Tag</label>
+                    <label htmlFor="tag" className="form-label"><strong>Tag</strong></label>
                     <input type="text" className="form-control" id="tag" name="tag" value={note.tag} onChange={onChange} minLength={5} required />
                 </div>
-                <button disabled={note.title.length<5 || note.description.length<5} type="submit" className="btn btn-primary" onClick={handleClick}>Add Note</button>
+                <button disabled={note.title.length<5 || note.description.length<5} type="submit" className="btn btn-primary mt-4" onClick={handleClick}>Add Note</button>
             </form>
         </div>
     </div>
