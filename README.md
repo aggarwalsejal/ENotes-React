@@ -13,15 +13,15 @@
 
 # :point_right: Pre-requisite to run React
 
-Install Node.js and npm in the local machine. Use this docuementation for info and set up steps.<br>
+Install Node.js and npm in the local machine. Use [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) docuementation for info and set up steps.<br>
 
-MongoDB set up, if have not done work still on MongoDB read this documentation to make yourself familiar with MongoDB<br>
+MongoDB set up, if have not done work still on MongoDB read [this](https://www.mongodb.com/) documentation to make yourself familiar with MongoDB<br>
 
-Have info about API calls, I have used thunderclient pretty similar to Podtman to create the API calls for this project. Thunderclient is inbuilt in VS code so seems easy to use, read this doc for more info
+Have info about API calls, I have used thunderclient pretty similar to Podtman to create the API calls for this project. Thunderclient is inbuilt in VS code so seems easy to use, read [this](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client) doc for more info
 
 # :scroll: How I create Backend for this project and connect it
 
-I don’t used localhost for MongoDB, I just Altas MongoDB for storing the data in this project, use this to set up the DB and use in the project.<br>
+I don’t used localhost for MongoDB, I just Altas MongoDB for storing the data in this project, use [this](https://studio3t.com/knowledge-base/articles/connect-to-mongodb-atlas) to set up the DB and use in the project.<br>
 
 Have created API call using the Thunderclient to store and fetch the data
 
@@ -45,7 +45,7 @@ cd my-app
 npm start
 ```
 
-Read this documentation for more details
+Read [this](https://create-react-app.dev/) documentation for more details
 # :bookmark: Script require to run the project
 
 For Bootstrap, add Script for Javascript and CSS<br>
@@ -67,14 +67,14 @@ In the project directory, you have the following scripts to run:
    
 ### `npm test`
    Launches the test runner in the interactive watch mode.
-   See the section about running tests for more information.
+   See the section about [running tests](https://create-react-app.dev/docs/running-tests/) for more information.
    
 ### `npm run build `
 
    Builds the app for production to build folder. It correctly bundles React in production mode and optimizes build for best performance.
    The build is minified and the filenames include the hashes.
    Your app is ready to be deployed!
-   See the section about deployment for more information.
+   See the section about [deployment](https://create-react-app.dev/docs/deployment/) for more information.
    
 ### ` npm run both `
     BOTH is required to run backend and frontend simultaneously
@@ -83,7 +83,7 @@ In the project directory, you have the following scripts to run:
       
 # :eyes: Where to see the running project
 
-Open http://localhost:3000 to view it in your browser. For more details, use this link
+Open http://localhost:3000 to view it in your browser. For more details, use [this](https://react.dev/) link
 
 # :boom: React Packages Used
 
@@ -96,9 +96,9 @@ Backend packages to install:
 
 To read more about,
 
-express package, follow this link<br>
-express-validator package, follow this link<br>
-mongoose package, follow this link<br>
+express package, follow [this](https://www.npmjs.com/package/express) link<br>
+express-validator package, follow [this](https://www.npmjs.com/package/express-validator) link<br>
+mongoose package, follow [this](https://www.npmjs.com/package/mongoose) link<br>
 
 Frontend packages to install:
 
@@ -120,8 +120,8 @@ Frontend packages to install:
 
     
 To read more about,
-react-router-dom package, follow this link<br>
-bcryptjs package, follow this link<br>
-concurrently package, follow this link<br>
-cors package, follow this link<br>
-jsonwebtoken package, follow this link<br>
+react-router-dom package, follow [this](https://www.npmjs.com/package/react-router-dom) link<br>
+bcryptjs package, follow [this](https://www.npmjs.com/package/bcryptjs) link<br>
+concurrently package, follow [this](https://www.npmjs.com/package/concurrently) link<br>
+cors package, follow [this](https://www.npmjs.com/package/cors) link<br>
+jsonwebtoken package, follow [this](https://www.npmjs.com/package/jsonwebtoken) link<br>
