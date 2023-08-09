@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const mongoURI ="mongodb+srv://$DATASOURCE_USERNAME:$DATASOURCE_PASSWORD@atlascluster.wctf8cb.mongodb.net/";
+const mongoURI = "mongodb+srv://$DATASOURCE_USERNAME:$DATASOURCE_PASSWORD@cluster0.mmejmaq.mongodb.net/";
 
 const connectToMongo = async () => {
   try {
