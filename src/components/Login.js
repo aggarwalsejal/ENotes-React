@@ -53,7 +53,7 @@ const Login=(props)=> {
       setCredentials({...credentials, [e.target.name]: e.target.value})
   }
   return (
-    <div>
+    <div className='container mt-5'>
       <h2>Login to continue look into your Notes</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-3 mt-5">
