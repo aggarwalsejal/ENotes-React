@@ -125,3 +125,4 @@ bcryptjs package, follow [this](https://www.npmjs.com/package/bcryptjs) link<br>
 concurrently package, follow [this](https://www.npmjs.com/package/concurrently) link<br>
 cors package, follow [this](https://www.npmjs.com/package/cors) link<br>
 jsonwebtoken package, follow [this](https://www.npmjs.com/package/jsonwebtoken) link<br>
+react-toastify package, follow [this](https://www.npmjs.com/package/react-toastify) link<br>
