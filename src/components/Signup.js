@@ -53,12 +53,12 @@ const Signup = (props) => {
     setCredentials({ ...credentials, [e.target.name]: e.target.value })
   };
   return (
-    <div className="container mt-3">
+    <div className="container mt-5">
       <h2>Create an account to use E-Notes</h2>
       <form onSubmit={handleSubmit}>
-        <div className="mb-3">
+        <div className="mb-3 mt-5">
           <label htmlFor="name" className="form-label">
-            Name
+            <strong>Name</strong>
           </label>
           <input
             type="name"
@@ -68,9 +68,9 @@ const Signup = (props) => {
           />
           <div className="form-text">Enter your name here</div>
         </div>
-        <div class="mb-3">
+        <div class="mb-3 mt-5">
           <label htmlFor="email" className="form-label">
-            Email address
+            <strong>Email address</strong>
           </label>
           <input
             type="email"
@@ -82,9 +82,9 @@ const Signup = (props) => {
             We'll never share your email with anyone else.
           </div>
         </div>
-        <div className="mb-3">
+        <div className="mb-3 mt-5">
           <label htmlFor="password" className="form-label">
-            Password
+            <strong>Password</strong>
           </label>
           <input
             type="password"
@@ -95,8 +95,10 @@ const Signup = (props) => {
             required
           />
         </div>
-        <div className="mb-3">
-          <label className="form-label">Confirm Password</label>
+        <div className="mb-3 mt-5">
+          <label className="form-label">
+            <strong>Confirm Password</strong>
+          </label>
           <input
             type="password"
             className="form-control"
@@ -106,9 +108,11 @@ const Signup = (props) => {
             required
           />
         </div>
-        <button type="submit" className="btn btn-primary mt-3">
-          Submit
-        </button>
+        <div className="text-center mt-5">
+          <button type="submit" className="btn btn-primary mt-3">
+            Submit
+          </button>
+        </div>
       </form>
     </div>
   );
