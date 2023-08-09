@@ -1,15 +1,22 @@
+![Screen_Recording_2023-08-09_at_4_40_18_PM_AdobeExpress](https://github.com/aggarwalsejal/ENotes-React/assets/56756275/ff85ab10-2913-4062-8b04-8e33ad7b354b)
+
+
 <h3 align=center > :smile: <strong>E-Notes</strong> is a <em><strong>React website</strong></em> o keep your daily notes and easy access provide to them :smile: </h3>
 <p align=center>Visit the website and try it once https://enotes-ui.aggarwalsejal.com/  :heart:</p>
 
 # :bookmark_tabs: What’s In This Document
 
 * Pre-requisite to run React
+
+* How I create Backend for this project and connect it
   
 * How to create your React App
   
 * Script require to run the project
   
 * Where to see the running project React Packages Used
+
+* [React Packages Used](:boom:-react-packages-used)
 
 # :point_right: Pre-requisite to run React
 
