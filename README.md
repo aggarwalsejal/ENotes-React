@@ -1,7 +1,7 @@
 <img width="1728" alt="Screenshot 2023-08-04 at 11 23 38 PM" src="https://github.com/aggarwalsejal/ENotes-React/assets/56756275/19a6ae58-94d9-410b-8912-cc5b3d4ef28e">
 
 <h3 align=center > :smile: <strong>E-Notes</strong> is a <em><strong>React website</strong></em> o keep your daily notes and easy access provide to them :smile: </h3>
-<p align=center>Visit the website and try it once https://enotes-ui.aggarwalsejal.com/  :heart:</p>
+<p align=center> :heart: Visit the website and try it once https://enotes-ui.aggarwalsejal.com/  :heart:</p>
 
 # :bookmark_tabs: What’s In This Document
 
@@ -89,7 +89,7 @@ Open http://localhost:3000 to view it in your browser. For more details, use [th
 
 # :boom: React Packages Used
 
-Backend packages to install:
+### Backend packages to install:
 
     "cors": "^2.8.5",
     "express": "^4.18.2",
@@ -98,11 +98,11 @@ Backend packages to install:
 
 To read more about,
 
-express package, follow [this](https://www.npmjs.com/package/express) link<br>
-express-validator package, follow [this](https://www.npmjs.com/package/express-validator) link<br>
-mongoose package, follow [this](https://www.npmjs.com/package/mongoose) link<br>
+&nbsp; &nbsp; express package, follow [this](https://www.npmjs.com/package/express) link<br>
+&nbsp; &nbsp; express-validator package, follow [this](https://www.npmjs.com/package/express-validator) link<br>
+&nbsp; &nbsp; mongoose package, follow [this](https://www.npmjs.com/package/mongoose) link<br>
 
-Frontend packages to install:
+### Frontend packages to install:
 
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@testing-library/jest-dom": "^5.17.0",
@@ -122,9 +122,9 @@ Frontend packages to install:
 
     
 To read more about,
-react-router-dom package, follow [this](https://www.npmjs.com/package/react-router-dom) link<br>
-bcryptjs package, follow [this](https://www.npmjs.com/package/bcryptjs) link<br>
-concurrently package, follow [this](https://www.npmjs.com/package/concurrently) link<br>
-cors package, follow [this](https://www.npmjs.com/package/cors) link<br>
-jsonwebtoken package, follow [this](https://www.npmjs.com/package/jsonwebtoken) link<br>
-react-toastify package, follow [this](https://www.npmjs.com/package/react-toastify) link<br>
+&nbsp; &nbsp; react-router-dom package, follow [this](https://www.npmjs.com/package/react-router-dom) link<br>
+&nbsp; &nbsp; bcryptjs package, follow [this](https://www.npmjs.com/package/bcryptjs) link<br>
+&nbsp; &nbsp; concurrently package, follow [this](https://www.npmjs.com/package/concurrently) link<br>
+&nbsp; &nbsp; cors package, follow [this](https://www.npmjs.com/package/cors) link<br>
+&nbsp; &nbsp; jsonwebtoken package, follow [this](https://www.npmjs.com/package/jsonwebtoken) link<br>
+&nbsp; &nbsp; react-toastify package, follow [this](https://www.npmjs.com/package/react-toastify) link<br>
