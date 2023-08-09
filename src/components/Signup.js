@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import { toast } from "react-toastify";
 const Signup = (props) => {
   const [credentials, setCredentials] = useState({
     name: "",
@@ -25,9 +25,27 @@ const Signup = (props) => {
       // Save the auth token and redirect
       localStorage.setItem("token", json.authtoken);
       navigate("/");
-      props.showAlert("Account created Successfully","success");
+      toast.dismiss();
+      toast.success("Account created Successfully", {
+        position: "bottom-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
     } else {
-      props.showAlert("Invalid Details","danger");
+      toast.dismiss();
+      toast.error("Invalid Details", {
+        position: "bottom-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
     }
   }
 

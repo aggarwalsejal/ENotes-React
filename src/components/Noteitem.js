@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import noteContext from "../context/notes/noteContext";
-
+import { toast } from "react-toastify";
 const Noteitem = (props) => {
   const context = useContext(noteContext);
   const { deleteNote } = context;
@@ -16,7 +16,16 @@ const Noteitem = (props) => {
                 className="fa-sharp fa-solid fa-trash mx-3"
                 onClick={() => {
                   deleteNote(note._id);
-                  props.showAlert("Note has been deleted", "success");
+                  toast.dismiss();
+                  toast.success("Note has been deleted", {
+                    position: "bottom-right",
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                  });
                 }}
               ></i>
               <i

@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const mongoURI ="mongodb+srv://$mongo_username:$mongo_password@atlascluster.wctf8cb.mongodb.net/";
+const mongoURI ="mongodb+srv://sejal:123456Qq@atlascluster.wctf8cb.mongodb.net/";
 
 const connectToMongo = async () => {
   try {

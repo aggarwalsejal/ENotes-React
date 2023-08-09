@@ -3,9 +3,8 @@ import noteContext from "../context/notes/noteContext";
 import Noteitem from "./Noteitem";
 import AddNote from "./AddNote";
 import { useNavigate } from "react-router-dom";
-
-const Notes = (props) => {
-  const { showAlert } = props;
+import { toast } from "react-toastify";
+const Notes = () => {
   const context = useContext(noteContext);
   let navigate = useNavigate();
   const { notes, getNotes, editNote } = context;
@@ -17,6 +16,7 @@ const Notes = (props) => {
       // eslint-disable-next-line
       navigate("/login");
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   const ref = useRef(null);
   const refClose = useRef(null);
@@ -40,7 +40,16 @@ const Notes = (props) => {
   const handleClick = (e) => {
     editNote(note.id, note.etitle, note.edescription, note.etag);
     refClose.current.click();
-    props.showAlert("Updated successfully", "success");
+    toast.dismiss();
+    toast.success("Updated successfully", {
+      position: "bottom-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
   };
 
   const onChange = (e) => {
@@ -49,7 +58,7 @@ const Notes = (props) => {
 
   return (
     <>
-      <AddNote showAlert={showAlert} />
+      <AddNote />
       <button
         ref={ref}
         type="button"
@@ -158,12 +167,7 @@ const Notes = (props) => {
         </div>
         {notes.map((note) => {
           return (
-            <Noteitem
-              showAlert={showAlert}
-              key={note._id}
-              updateNote={updateNote}
-              note={note}
-            />
+            <Noteitem key={note._id} updateNote={updateNote} note={note} />
           );
         })}
       </div>

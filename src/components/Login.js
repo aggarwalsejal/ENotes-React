@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import { useNavigate } from 'react-router-dom'
+import { toast } from "react-toastify";
 
 const Login=(props)=> {
   const [credentials, setCredentials] = useState({email: "", password: ""}) 
@@ -20,11 +21,31 @@ const Login=(props)=> {
       if (json.success){
           // Save the auth token and redirect
           localStorage.setItem('token', json.authtoken); 
-          props.showAlert("Logged in successfully","success");
+          toast.dismiss();
+          toast.success("Logged in successfully", {
+            position: "bottom-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
+         
           navigate('/');
       }
       else{
-        props.showAlert("Invalid credentials","danger");
+        toast.dismiss();
+        toast.error("Invalid credentials", {
+          position: "bottom-right",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+     
       }
   }
 

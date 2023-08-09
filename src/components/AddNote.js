@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react'
 import noteContext from '../context/notes/noteContext'
+import { toast } from "react-toastify";
 
 function AddNote(props) {
     const context=useContext(noteContext);
@@ -9,7 +10,16 @@ function AddNote(props) {
         e.preventDefault();
         addNote(note.title,note.description,note.tag);
         setNote({title: "", description: "", tag: ""})
-        props.showAlert("Added successfully","success");
+        toast.dismiss();
+      toast.success("Added successfully", {
+        position: "bottom-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
     }
     const onChange = (e) => {
         setNote({...note, [e.target.name]:e.target.value})
