@@ -1,5 +1,4 @@
-![Screen_Recording_2023-08-09_at_4_40_18_PM_AdobeExpress](https://github.com/aggarwalsejal/ENotes-React/assets/56756275/ff85ab10-2913-4062-8b04-8e33ad7b354b)
-
+<img width="1728" alt="Screenshot 2023-08-04 at 11 23 38 PM" src="https://github.com/aggarwalsejal/ENotes-React/assets/56756275/19a6ae58-94d9-410b-8912-cc5b3d4ef28e">
 
 <h3 align=center > :smile: <strong>E-Notes</strong> is a <em><strong>React website</strong></em> o keep your daily notes and easy access provide to them :smile: </h3>
 <p align=center>Visit the website and try it once https://enotes-ui.aggarwalsejal.com/  :heart:</p>
