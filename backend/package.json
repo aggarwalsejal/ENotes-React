@@ -3,7 +3,9 @@
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "express-validator": "^7.0.1",
-    "mongoose": "^6.10.0"
+    "mongoose": "^6.10.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.1"
   },
   "name": "e-notes-backend",
   "version": "1.0.0",
