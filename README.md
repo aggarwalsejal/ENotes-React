@@ -1,6 +1,6 @@
 <img width="1728" alt="Screenshot 2023-08-04 at 11 23 38 PM" src="https://github.com/aggarwalsejal/ENotes-React/assets/56756275/19a6ae58-94d9-410b-8912-cc5b3d4ef28e">
 
-<h3 align=center > :smile: <strong>E-Notes</strong> is a <em><strong>React website</strong></em> o keep your daily notes and easy access provide to them :smile: </h3>
+<h3 align=center > :smile: <strong>E-Notes</strong> is a <em><strong>React website</strong></em> o keep your daily notes and easy access provided to them :smile: </h3>
 <p align=center> :heart: Visit the website and try it once https://enotes-ui.aggarwalsejal.com/  :heart:</p>
 
 # :bookmark_tabs: What’s In This Document
@@ -14,15 +14,15 @@
 
 # :point_right: Pre-requisite to run React
 
-Install Node.js and npm in the local machine. Use [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) docuementation for info and set up steps.<br>
+Install Node.js and npm on the local machine. Use [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) documentation for info and setup steps.<br>
 
-MongoDB set up, if have not done work still on MongoDB read [this](https://www.mongodb.com/) documentation to make yourself familiar with MongoDB<br>
+MongoDB set up, if have not done work on MongoDB read [this](https://www.mongodb.com/) documentation to make yourself familiar with MongoDB<br>
 
-Have info about API calls, I have used thunderclient pretty similar to Podtman to create the API calls for this project. Thunderclient is inbuilt in VS code so seems easy to use, read [this](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client) doc for more info
+Have info about API calls, I have used Thunderclient pretty similar to Podtman to create the API calls for this project. Thunderclient is built in VS code so seems easy to use, read [this](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client) doc for more info
 
-# :scroll: How I create Backend for this project and connect it
+# :scroll: How I create a Backend for this project and connect it
 
-I don’t used localhost for MongoDB, I just Altas MongoDB for storing the data in this project, use [this](https://studio3t.com/knowledge-base/articles/connect-to-mongodb-atlas) to set up the DB and use in the project.<br>
+I don’t use localhost for MongoDB, I just Altas MongoDB for storing the data in this project, use [this](https://studio3t.com/knowledge-base/articles/connect-to-mongodb-atlas) to set up the DB and use in the project.<br>
 
 Have created API call using the Thunderclient to store and fetch the data
 
@@ -60,7 +60,7 @@ In the project directory, you have the following scripts to run:
     "eject": "react-scripts eject",
     "both": "concurrently \"react-scripts start\" \"npx nodemon backend/index.js\""
 
-<strong>Both</strong> is required to run backend and frontend simultaneously
+<strong>Both</strong> are required to run the backend and frontend simultaneously
 
 ### `npm start `
 
@@ -73,7 +73,7 @@ In the project directory, you have the following scripts to run:
    
 ### `npm run build `
 
-   Builds the app for production to build folder. It correctly bundles React in production mode and optimizes build for best performance.
+   Builds the app for production to build folder. It correctly bundles React in production mode and optimizes the build for the best performance.
    The build is minified and the filenames include the hashes.
    Your app is ready to be deployed!
    See the section about [deployment](https://create-react-app.dev/docs/deployment/) for more information.
